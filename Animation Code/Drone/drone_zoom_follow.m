@@ -38,8 +38,8 @@ function drone_zoom_follow(positions, angles, param)
     trailPositions = zeros(trailLength, 3); % Store previous positions for the trail
     
     % Plot the Start and End
-    plot3(param.start(1), param.start(2), z(1), 'Marker', 'o', 'LineStyle', 'none', 'Color', 'k')
-    plot3(param.goal(1), param.goal(2), z(1), 'Marker', 'x', 'LineStyle', 'none', 'Color', 'k')
+    plot3(param.start(1), param.start(2), param.start(3) , 'Marker', 'o', 'LineStyle', 'none', 'Color', 'k')
+    plot3(param.goal(1), param.goal(2), param.goal(3), 'Marker', 'x', 'LineStyle', 'none', 'Color', 'k')
       
 
     % Loop over all frames

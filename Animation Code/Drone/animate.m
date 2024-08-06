@@ -106,7 +106,7 @@ function animate(positions, angles, param)
         % surf(xc, yc, zc, 'FaceColor', 'r', 'EdgeColor', 'black'); % Plot solid color without edges
 
         % Parameters for the cylinders
-        numPoints = param.NumPoints; % Resolution of the cylinder
+        numPoints = param.numPoints; % Resolution of the cylinder
           
         % Parameters for the circles along the pillar height
         numCircles = param.numCircles; % Number of circles to draw along the pillar's height

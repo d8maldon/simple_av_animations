@@ -28,12 +28,12 @@ param.l = 1;                    % Length of the drone's
 param.plotTitle = ['circle']; % Title for the plot and filenames
 param.Tf = 10;
 param.trailLength = 10; % Trail length
+
 % Number of circles to draw along the pillar's height
 param.numCircles = 1; 
 
 % Resolution of the cylinder
 param.numPoints = 50; % The higher the number the higher the comp time
-
 
 R = 5; 
 x0 = data(1,1);
@@ -51,16 +51,16 @@ param.zmin = -1; param.zmax = 2*z0;
 
 param.start = [x0, y0, z0];
 param.goal = [data(end,1) data(end,2) data(end,3)];
-param3D.lgd = {'Drone','Start', 'Goal', 'Pillar'}; 
+param.lgd = {'Path'}; 
 
 %----------------Viewing Angle--------------%
 % param.view = [0,90];    %top view (xy)
 % param.view = [0,0];     %side view (zx)
 % param.view = [90,0];    %side view (zy)
-% param.view = (3);       %Default 
+param.view = (3);       %Default 
 % param.view = [-120,50]; 
 % param.view = [-30,60]; 
-param.view = [-30,70]; 
+% param.view = [-30,70]; 
 param.zoom = 1;         % The smaller the number the more zoomed in!
     
 % Example has no pillars
